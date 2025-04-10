@@ -16,14 +16,19 @@ class Mi_clase:
 
     def iguales(self):
         if self.num1 == self.num2 == self.num3:
-            True
+            return True
         else:
-            False
+            return False
 
     def concatenar(self):
         return str(self.num1) + str(self.num2) + str(self.num3)
     
 
-    
-            
+obj = Mi_clase(5, 5, 5)
+print("Suma:", obj.sumar())
+print("Mayor:", obj.mayor())
+print("Menor:", obj.menor())
+print("¿Son iguales?:", obj.iguales())
+print("Concatenado:", obj.concatenar())
+
             
