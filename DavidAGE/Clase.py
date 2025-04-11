@@ -1,8 +1,8 @@
 class mi_clase:
-    def __init__(self, Num1, Num2, Num3):
-        self.Num1 = num1
-        self.Num2 = num2
-        self.Num3 = num3
+    def __init__(self, num1, num2, num3):
+        self.num1 = num1
+        self.num2 = num2
+        self.num3 = num3
 
     def sumar(self):
         return self.num1 + self.num2 + self.num3
@@ -20,8 +20,8 @@ class mi_clase:
         return str(self.num1) + str(self.num2) + str(self.num3)
     
 Numero = mi_clase(29, 10, 19)
-print(f "Suma: ",(Numero.sumar))
-print(f "Mayor: ",(Numero.mayor))
-print(f "Menor: ",(Numero.menor))
-print(f "Seran iguales?:  ",(Numero.iguales))
-print(f "Concatenados": ,(Numero.concatenar))
+print("Suma: ",Numero.sumar())
+print("Mayor: ",Numero.mayor())
+print("Menor: ",Numero.menor())
+print("Seran iguales?:  ",Numero.iguales())
+print("Concatenados: " ,Numero.concatenar())
