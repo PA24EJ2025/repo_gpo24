@@ -14,3 +14,11 @@ def iguales(self):
     return(self.num1 == self.num2 == self.num3)
 def concatenar(self):
     return str(self.num1) + str(self.num2) + str(self.num3)
+
+
+numero= Mi_clase(60,20,12)
+print("suma:", numero.sumar())
+print("mayor:", numero.mayor())
+print("menor:", numero.menor())
+print("iguales:", numero.iguales())
+print("concatenos:", numero.concatenar())
