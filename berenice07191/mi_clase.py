@@ -14,7 +14,7 @@ class mi_clase:
     def concatenar(self):
        return str(self.num1)+str(self.num2)+str(self.num3)
 
-Numero=mi_clase(29,10,19)
+Numero=mi_clase(31,18,23)
 
 print ("Suma:",Numero.sumar())
 print ("Mayor:",Numero.mayor())
