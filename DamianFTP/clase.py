@@ -18,3 +18,10 @@ class Mi_clase:
 
     def concatenar(self):
         return str(self.num1) + str(self.num2) + str(self.num3)
+    
+numero = Mi_clase(20,50,85)
+print("sumar:",numero.sumar())
+print("mayor:",numero.mayor())
+print("menor:",numero.menor())
+print("iguales:",numero.iguales())
+print("concatenar:",numero.concatenar())
