@@ -1,0 +1,3 @@
+[submodule "repo_gpo24"]
+	path = repo_gpo24
+	url = https://github.com/PA24EJ2025/repo_gpo24.git
