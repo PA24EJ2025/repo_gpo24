@@ -11,4 +11,6 @@ class Numeros:
         #Numero MAyor
     def mayor(self):
         return max(self.numero1, self.numero2, self.numero3)
-    
+     #Numero Menor
+    def menor(self):
+        return min(self.numero1, self.numero2, self.numero3)
