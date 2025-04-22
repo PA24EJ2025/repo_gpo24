@@ -14,3 +14,6 @@ class Numeros:
      #Numero Menor
     def menor(self):
         return min(self.numero1, self.numero2, self.numero3)
+    #Verificar Igualdad
+    def iguales(self):
+        return self.numero1 == self.numero2 == self.numero3
