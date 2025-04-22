@@ -26,3 +26,10 @@ n1 = int(input("Numero 1: "))
 n2 = int(input("Numero 2: "))
 n3 = int(input("Numero 3: "))
 numeros = Numeros(n1, n2, n3)
+
+#Mostrar Resultados
+print("LA SUMA ES:", numeros.sumar())
+print("EL NÚMERO MAYOR ES:", numeros.mayor())
+print("EL NÚMERO MENOR ES:", numeros.menor())
+print("¿TODOS SON IGUALES?:", numeros.iguales())
+print("NÚMEROS CONCATENADOS:", numeros.concatenar())
