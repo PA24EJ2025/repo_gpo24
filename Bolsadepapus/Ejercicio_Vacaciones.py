@@ -17,3 +17,6 @@ class Numeros:
     #Verificar Igualdad
     def iguales(self):
         return self.numero1 == self.numero2 == self.numero3
+    #Concatenar
+    def concatenar(self):
+        return str(self.numero1) + str(self.numero2) + str(self.numero3)
