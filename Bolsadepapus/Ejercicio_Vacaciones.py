@@ -19,4 +19,10 @@ class Numeros:
         return self.numero1 == self.numero2 == self.numero3
     #Concatenar
     def concatenar(self):
-        return str(self.numero1) + str(self.numero2) + str(self.numero3)
+        return str(self.numero1) + str(self.numero2) + str(self.numero3)   
+         
+# Pedir Datos al Usuario
+n1 = int(input("Numero 1: "))
+n2 = int(input("Numero 2: "))
+n3 = int(input("Numero 3: "))
+numeros = Numeros(n1, n2, n3)
