@@ -4,4 +4,7 @@ class Numeros:
         self.numero1 = numero1
         self.numero2 = numero2
         self.numero3 = numero3
-        
+
+        #Sumar
+    def sumar(self):
+        return self.numero1 + self.numero2 + self.numero3
