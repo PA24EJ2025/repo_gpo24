@@ -12,6 +12,8 @@ from pygame.locals import*
 #5. Inicializar variables
 
 #6. Ciclo infinito
+
+
     #7. Verificar y manejar los eventos
     #8. Realizar cualquier acción por frame
 
