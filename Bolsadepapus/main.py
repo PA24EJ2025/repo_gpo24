@@ -1,9 +1,9 @@
 #1. Importar el framework o paquete
 import pygame
 import sys
-dsds
 #2. Definir constantes
-
+class Perfil: 
+     def __init__(self, X, Y, Ancho,  Alto, Imagen, Velocidad):
 #3. Inicializar pygame
 
 #4. Cargar recursos (imagenes)
