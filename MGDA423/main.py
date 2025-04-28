@@ -11,7 +11,7 @@ from pygame.locals import*
 #4. Cargar recursos (imagenes)
 #5. Inicializar variables
 
-#6. Ciclo infinito
+#6. ciclo infinito..
 
 
     #7. Verificar y manejar los eventos
@@ -21,6 +21,6 @@ from pygame.locals import*
 
     #10. Dibujar elementos en la ventana
     
-    #11. Actualizar la ventana
+    #11... Actualizar la ventana
     
     #12. Ralentizar un poco las cosas
