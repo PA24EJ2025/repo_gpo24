@@ -1,6 +1,7 @@
 #1. Importar el framework o paquete
 import pygame
 import sys
+dsds
 #2. Definir constantes
 
 #3. Inicializar pygame
