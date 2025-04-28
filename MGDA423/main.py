@@ -1,11 +1,14 @@
 #1. Importar el framework o paquete
 import pygame
 import sys
-from pygame.locals import*
+from pygame.locals import *
 
 
 #2. Definir constantes
-
+ANCHO_VENTANA = 645
+ALTO_VENTANA = 480
+AZUL_CLARO = (173, 216, 230)
+CUADROS_POR_SEGUNDO = 30  
 #3. Inicializar pygame
 
 #4. Cargar recursos (imagenes)
