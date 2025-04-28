@@ -1,0 +1,15 @@
+import pygame
+from pygame.locals import *
+import sys
+import perfil
+
+ANCHO_VENTANA=
+ALTO_VENTANA=
+FPS=30
+SIZE_CUADRO=80
+ANCHO_MAX=ANCHO_VENTANA - SIZE_MAX
+ALTO_MAX=ALTO_VENTANA - SIZE_MAX
+
+pygame.init()
+ventana = pygame.display.set_mode((ANCHO_VENTANA,ALTO_VENTANA))
+reloj = pygame.time.Clock()
