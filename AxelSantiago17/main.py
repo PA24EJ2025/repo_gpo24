@@ -1,10 +1,18 @@
 #1. Importar el framework o paquete
 import pygame
+from pygame.locals import*
 import sys
+
 #2. Definir constantes
-class Perfil: 
-     def __init__(self, X, Y, Ancho,  Alto, Imagen, Velocidad):
+ANCHO = 80
+ALTO = 80
+FPS = 30 
+blanco = (255,255,255)
+
 #3. Inicializar pygame
+pygame.init()
+ventana = pygame.display.set_mode((ANCHO_VENTANA,ALTO_VENTANA))
+reloj = pygame.time.Clock()
 
 #4. Cargar recursos (imagenes)
 #5. Inicializar variables
