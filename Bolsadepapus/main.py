@@ -10,6 +10,7 @@ FPS = 60
 pygame.init()
 
 #4. Cargar recursos (imagenes)
+imagen_perfil = pygame.image.load("Bolsadepapus/images.png")
 #5. Inicializar variables
 
 #6. Ciclo infinito
