@@ -62,3 +62,4 @@ while True:
     #11. Actualizar la ventana
     pygame.display.flip()
     #12. Ralentizar un poco las cosas
+    reloj.tick(FPS)
