@@ -7,6 +7,7 @@ ALTO_VENTANA = 400
 COLOR_FONDO = (30, 30, 30)
 FPS = 60
 #3. Inicializar pygame
+pygame.init()
 
 #4. Cargar recursos (imagenes)
 #5. Inicializar variables
