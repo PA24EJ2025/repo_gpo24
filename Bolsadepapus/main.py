@@ -12,7 +12,9 @@ pygame.init()
 #4. Cargar recursos (imagenes)
 imagen_perfil = pygame.image.load("Bolsadepapus/images.png")
 #5. Inicializar variables
-
+ventana = pygame.display.set_mode((ANCHO_VENTANA, ALTO_VENTANA))
+pygame.display.set_caption("Mover Foto de Perfil")
+reloj = pygame.time.Clock()
 #6. Ciclo infinito
     #7. Verificar y manejar los eventos
     #8. Realizar cualquier acción por frame
