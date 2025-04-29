@@ -58,7 +58,7 @@ while True:
 
     #10. Dibujar elementos en la ventana
     perfil.mostrar(ventana)
-    
+
     #11. Actualizar la ventana
-    
+    pygame.display.flip()
     #12. Ralentizar un poco las cosas
