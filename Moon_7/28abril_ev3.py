@@ -5,6 +5,7 @@ from pygame.locals import *
 import perfil
 import sys
 
+<<<<<<< HEAD
 
 ALTO_VENTANA=500
 ANCHO_VENTANA=700
@@ -14,6 +15,16 @@ SIZE_CUADRO=70
 ANCHO_MAX=ANCHO_VENTANA-SIZE_CUADRO
 ALTO_MAX=ALTO_VENTANA-SIZE_CUADRO
 
+=======
+ALTO_VENTANA=500
+ANCHO_VENTANA=700
+MORADO = (182, 149, 192)
+FPS=40
+SIZE_CUADRO=70
+ANCHO_MAX=ANCHO_VENTANA-SIZE_CUADRO
+ALTO_MAX=ALTO_VENTANA-SIZE_CUADRO
+
+>>>>>>> fc2090003b82904aa7f455d420d2ebed377a3a06
 pygame.init()
 ventana = pygame.display.set_mode((ANCHO_VENTANA,ALTO_VENTANA))
 reloj = pygame.time.Clock()
@@ -49,4 +60,8 @@ while True:
     
     pygame.display.update()
     reloj.tick(FPS) 
+<<<<<<< HEAD
     
+=======
+    
+>>>>>>> fc2090003b82904aa7f455d420d2ebed377a3a06
