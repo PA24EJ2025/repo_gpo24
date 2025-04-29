@@ -2,8 +2,10 @@
 import pygame
 import sys
 #2. Definir constantes
-class Perfil: 
-     def __init__(self, X, Y, Ancho,  Alto, Imagen, Velocidad):
+ANCHO_VENTANA = 600
+ALTO_VENTANA = 400
+COLOR_FONDO = (30, 30, 30)
+FPS = 60
 #3. Inicializar pygame
 
 #4. Cargar recursos (imagenes)
