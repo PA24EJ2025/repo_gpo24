@@ -34,6 +34,12 @@ class Perfil:
 perfil = Perfil(x=100, y=100, alto=80, ancho=80, velocidad=5)
 
 #6. Ciclo infinito
+while True:
+    # 7. Verificar y manejar los eventos
+    for evento in pygame.event.get():
+        if evento.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
     #7. Verificar y manejar los eventos
     #8. Realizar cualquier acción por frame
 
