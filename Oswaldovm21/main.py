@@ -35,6 +35,7 @@ while True:
     teclas = pygame.key.get_pressed()
     if teclas[pygame.K_LEFT]:
         x -= velocidad
+        
     #9. Limpiar la ventana
     ventana.fill(NEGRO)
     #10. Dibujar elementos en la ventana
