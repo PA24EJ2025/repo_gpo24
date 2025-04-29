@@ -41,6 +41,10 @@ while True:
             pygame.quit()
             sys.exit()
     #7. Verificar y manejar los eventos
+    for evento in pygame.event.get():
+        if evento.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
     #8. Realizar cualquier acción por frame
 
     #9. Limpiar la ventana
