@@ -35,16 +35,13 @@ perfil = Perfil(x=100, y=100, alto=80, ancho=80, velocidad=5)
 
 #6. Ciclo infinito
 while True:
+    
     # 7. Verificar y manejar los eventos
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-    #7. Verificar y manejar los eventos
-    for evento in pygame.event.get():
-        if evento.type == pygame.QUIT:
-            pygame.quit()
-            sys.exit()
+
     #8. Realizar cualquier acción por frame
     teclas = pygame.key.get_pressed()
     if teclas[pygame.K_LEFT]:
@@ -57,6 +54,7 @@ while True:
         perfil.y += perfil.velocidad
 
     #9. Limpiar la ventana
+    ventana.fill(COLOR_FONDO)
 
     #10. Dibujar elementos en la ventana
     
