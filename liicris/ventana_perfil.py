@@ -3,8 +3,8 @@ from pygame.locals import *
 import sys
 from imagen_perfil import perfil
 
-ANCHO_VENTANA = 80
-ALTO_VENTANA = 80
+ANCHO_VENTANA = 400
+ALTO_VENTANA = 360
 FPS = 30
 BLANCO = (255, 255, 255)
 
