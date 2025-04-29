@@ -46,6 +46,15 @@ while True:
             pygame.quit()
             sys.exit()
     #8. Realizar cualquier acción por frame
+    teclas = pygame.key.get_pressed()
+    if teclas[pygame.K_LEFT]:
+        perfil.x -= perfil.velocidad
+    if teclas[pygame.K_RIGHT]:
+        perfil.x += perfil.velocidad
+    if teclas[pygame.K_UP]:
+        perfil.y -= perfil.velocidad
+    if teclas[pygame.K_DOWN]:
+        perfil.y += perfil.velocidad
 
     #9. Limpiar la ventana
 
