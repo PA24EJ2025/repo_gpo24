@@ -17,4 +17,4 @@
     
     #11. Actualizar la ventana
     
-    #12. Ralentizar un poco las cosas
+    #12. Ralentizar un poco las cosas 

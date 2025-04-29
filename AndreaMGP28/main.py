@@ -1,10 +1,20 @@
 #1. Importar el framework o paquete
+import pygame
+import sys
+from pygame.locals import*
 
 #2. Definir constantes
-
+ROSA = (221,160,160)
+ANCHO_VENTANA = 640
+ALTO_VENTANA = 480
+CUADROS_POR_SEGUNDO = 30
 #3. Inicializar pygame
+pygame.init()
+ventana = pygame.dsplay.set_mode((ANCHO_VENTANA,ALTO_VENTANA))
+reloj = pygame.time.Clock()
 
 #4. Cargar recursos (imagenes)
+
 #5. Inicializar variables
 
 #6. Ciclo infinito

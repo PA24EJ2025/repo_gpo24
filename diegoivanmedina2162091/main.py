@@ -1,9 +1,14 @@
 #1. Importar el framework o paquete
-
+import pygame
+for pygame.locals import *
+import sys
+import modulo
 #2. Definir constantes
-
+ANCHO_VENTANA = 640
+ALTO_VENTANA = 840
+CUADROS POR SEGUNDO = 30
 #3. Inicializar pygame
-
+pygame.init
 #4. Cargar recursos (imagenes)
 #5. Inicializar variables
 
