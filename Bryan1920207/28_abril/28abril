@@ -20,7 +20,7 @@ while True:
             pygame.quit()
             sys.exit()
             
-    obj_perfil =perfil.perfil("Bryan",10,10,90,90)
+    obj_perfil = perfil.Foto("Bryan",10,10,90,90)
     obj_perfil.dibujar(ventana)
     
     pygame.display.update()
