@@ -55,8 +55,7 @@ while True:
             pygame.quit()
             sys.exit()
             
-    obj_perfil =perfil.perfil("Moon",40,40,70,70)
-    obj_perfil.dibujar(ventana)
+
     
     pygame.display.update()
     reloj.tick(FPS) 
