@@ -25,3 +25,9 @@ class Perfil:
         ventana.blit(self.imagen_nueva,(self.x, self.y))
 
 foto = Perfil(x,y,alto,ancho,velocidad)
+
+while True:
+    for evento in pygame.event.get():
+        if evento.type ==QUIT:
+            pygame.quit()
+            sys.exit()
