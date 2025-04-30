@@ -45,3 +45,26 @@ while True:
         if evento.type == QUIT:
             pygame.quit()
             sys.exit()
+
+    #8. Realizar cualquier acción por frame
+    teclas = pygame.key.get_pressed()
+    if teclas[K_UP] and perfil.y > 0:
+        perfil.y -= perfil.velocidad
+    if teclas[K_DOWN] and perfil.y < ALTO_VENTANA - perfil.alto:
+        perfil.y += perfil.velocidad
+    if teclas[K_LEFT] and perfil.x > 0:
+        perfil.x -= perfil.velocidad
+    if teclas[K_RIGHT] and perfil.x < ANCHO_VENTANA - perfil.ancho:
+        perfil.x += perfil.velocidad
+
+    #9. Limpiar la ventana
+    pantalla.fill(NEGRO)
+
+    #10. Dibujar elementos en la ventana
+    perfil.mostrar(pantalla)
+    
+    #11. Actualizar la ventana
+    pygame.display.update()
+    
+    #12. Ralentizar un poco las cosas
+    reloj.tick(60)
