@@ -6,46 +6,36 @@ class Perfil:
         self.alto = alto
         self.imagen = imagen
         self.velocidad = velocidad
-#1. Importar el framework o paquete
+        self.fotoperfil = pygame.image.load("ousi.png")
+    def mostrar(self, ventana):
+        ventana.blit(self.fotoperfil, (self.x, self.y))
+
 import pygame
-from pygame.locals import *
 import sys
-import random
-#2. Definir constantes
-ANCHO_VENTANA = 1900
-ALTO_VENTANA = 1000
-FPS = 30
-BLANCO_CUADRO = 10
-ANCHO_MAX = ANCHO_VENTANA- SIZE_CUADRO
-ALTO_MAX = ALTO_VENTANA- SIZE_CUDARO
-#3. Inicializar pygame
 pygame.init()
-ventana = pygame.display.set_mode((ANCHO_VENTANA,ALTO_VENTANA))
+ventana = pygame.display.set_mode((800, 700))
 reloj = pygame.time.Clock()
-#4. Cargar recursos (imagenes)
+frames = 60
 
-#5. Inicializar variables
+posicion = Perfil(x=350, y=300, alto=80, ancho=80, velocidad=5) 
 
-#6. Ciclo infinito
-ventana.fill(BLANCO)
 while True:
-#7. Verificar y manejar los eventos
-    for evento in pygame.event.get():
-        if evento.type ==QUIT:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-        elif evento.type ==KEYDOWN:
-            if evento.key == K_n:
-                pos_x = random.randrange(ANCHO_MAX)
-                pos_y = random.randrange(ALTO_MAX)
-   
-#8. Realizar cualquier acción por frame
-    
-#9. Limpiar la ventana
 
-#10. Dibujar elementos en la ventana
-    
-#11. Actualizar la ventana
-    pygame.display.update()
-#12. Ralentizar un poco las cosas
-    reloj.tick(FPS)
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_UP]:
+        posicion.y -= posicion.velocidad  
+    if keys[pygame.K_DOWN]:
+        posicion.y += posicion.velocidad
+    if keys[pygame.K_LEFT]:
+        posicion.x -= posicion.velocidad 
+    if keys[pygame.K_RIGHT]:
+        posicion.x += posicion.velocidad 
+
+    ventana.fill("black") #optimizacion para asignar color al fondo sin necesidad de una constante 
+    posicion.mostrar(ventana)
+    pygame.display.flip()
+    reloj.tick(frames)
