@@ -10,7 +10,7 @@ ALTO_VENTANA = 480
 CUADROS_POR_SEGUNDO = 30
 #3. Inicializar pygame
 pygame.init()
-ventana = pygame.dsplay.set_mode((ANCHO_VENTANA,ALTO_VENTANA))
+ventana = pygame.display.set_mode((ANCHO_VENTANA,ALTO_VENTANA))
 pygame.display.set_caption("Mover foto con teclas")
 reloj = pygame.time.Clock()
 
@@ -39,7 +39,6 @@ while True:
             pygame.quit()
             sys.exit()
     #8. Realizar cualquier acción por frame
-    if  teclas = pygame.key.get_pressed()
     if teclas[pygame.K_LEFT]:
         perfil.x -= perfil.velocidad
     if teclas[pygame.K_RIGHT]:
