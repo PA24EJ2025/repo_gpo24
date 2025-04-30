@@ -7,7 +7,7 @@ from pygame.locals import*
 ROSA = (221,160,160)
 ANCHO_VENTANA = 640
 ALTO_VENTANA = 480
-CUADROS_POR_SEGUNDO = 30
+FPS = 30
 #3. Inicializar pygame
 pygame.init()
 ventana = pygame.display.set_mode((ANCHO_VENTANA,ALTO_VENTANA))
@@ -39,6 +39,7 @@ while True:
             pygame.quit()
             sys.exit()
     #8. Realizar cualquier acción por frame
+    teclas = pygame.key.get_pressed()
     if teclas[pygame.K_LEFT]:
         perfil.x -= perfil.velocidad
     if teclas[pygame.K_RIGHT]:
