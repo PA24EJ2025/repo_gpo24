@@ -18,14 +18,14 @@ from pygame.locals import *
 pygame.init()
 
 #Pantalla
-ancho = 600
-alto = 500
-ventana = pygame.display.set_mode((ancho, alto))
+ANCHO = 800
+ALTO = 600
+ventana = pygame.display.set_mode((ANCHO, ALTO))
 x= 0
 y=0
 velocidad = 60
 reloj = pygame.time.Clock()
-foto = Perfil(x, y, alto, ancho, velocidad)
+foto = Perfil(x, y, ANCHO, ALTO, velocidad)
 
 
 #Ciclo infinito 
@@ -45,7 +45,7 @@ while True:
                 if evento.key == K_RIGHT:
                     foto.x += foto.velocidad
 
-    ventana.fill((0, 0, 0))
+    ventana.fill((255, 255, 255))
     foto.mostrar(ventana)
     pygame.display.flip()
     reloj.tick(velocidad)
