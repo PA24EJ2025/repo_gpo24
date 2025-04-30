@@ -4,12 +4,14 @@ class Perfil:
         self.y=y
         self.ancho_1=ancho_i
         self.alto_i=alto_i
-        self.imagen= pygame.image.load("kratos.png")
+        self.imagen= pygame.image.load("kratos.jpg")
         self.imagen=pygame.transform.scale(self.imagen,(ancho_i,alto_i))
         self.velocidad=velocidad
     def mover(self,dx,dy):
         self.x += dx + self.velocidad
         self.y += dy + self.velocidad
+        self.x = max(0, min(self.x, ANCHO - self.ancho_i))
+        self.y = max(0, min(self.y, ALTO - self.alto_i))
     def dibujar(self,superficie):
         superficie.blit(self.imagen,(self.x,self.y))
 
