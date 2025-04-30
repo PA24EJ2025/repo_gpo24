@@ -23,3 +23,5 @@ class Perfil:
 
     def mostrar(self,ventana):
         ventana.blit(self.imagen_nueva,(self.x, self.y))
+
+foto = Perfil(x,y,alto,ancho,velocidad)
