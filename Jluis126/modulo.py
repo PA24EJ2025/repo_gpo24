@@ -1,14 +1,11 @@
 # 1. Importar el framework o paquete
 import pygame
 import sys
-
-
 # 2. Definir constantes
 X = 500
 Y = 500
 ANCHO = 80
 ALTO = 80
-
 # 3. Inicializar pygame
 pygame.init()
 ventana = pygame.display.set_mode((X, Y))
