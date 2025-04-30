@@ -33,15 +33,20 @@ while True:
             sys.exit()
     #8. Realizar cualquier acción por frame
     teclas = pygame.key.get_pressed()
-    if teclas[pygame.K_LEFT]:
+    if teclas[pygame.K_LEFT] and x > 0:
         x -= velocidad
-        
+    if teclas[pygame.K_RIGHT] and x < 560:
+        x += velocidad
+    if teclas[pygame.K_UP] and y > 0:
+        y -= velocidad
+    if teclas[pygame.K_DOWN] and y < 400:
+        y += velocidad
     #9. Limpiar la ventana
     ventana.fill(NEGRO)
     #10. Dibujar elementos en la ventana
     ventana.blit(imagen, (x, y))
-    pygame.display.flip()
-    #11. Actualizar la ventana
     
+    #11. Actualizar la ventana
+    pygame.display.flip()
     #12. Ralentizar un poco las cosas
     pygame.time.Clock().tick(30)
