@@ -15,7 +15,7 @@ pygame.display.set_caption("Mover foto con teclas")
 reloj = pygame.time.Clock()
 
 #4. Cargar recursos (imagenes)
-foto = pygame.image.load("AndreaMGP28/Gato suavitel.jpg")
+foto = pygame.image.load("AndreaMGP28/gatosuavitel.png")
 #5. Inicializar variables
 class Perfil:
     def __init__(self, x, y, alto, ancho, velocidad):
