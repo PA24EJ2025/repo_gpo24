@@ -25,3 +25,8 @@ y=0
 velocidad = 60
 reloj = pygame.time.Clock()
 
+while True:
+    for evento in pygame.event.get():
+        if evento.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
