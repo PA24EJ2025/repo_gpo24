@@ -11,7 +11,7 @@ FPS = 30
 #3. Inicializar pygame
 pygame.init()
 #4. Cargar recursos (imagenes)
-Foto_perfil = pygame.image.load("spidercat.png")
+Foto_perfil = pygame.image.load("DavidAGE/spidercat.png")
 #5. Inicializar variables
 ventana = pygame.display.set_mode((ANCHO_VENTANA, ALTO_VENTANA))
 pygame.display.set_caption("Movimiento de foto")
@@ -26,9 +26,9 @@ class Perfil:
         self.imagen = pygame.transform.scale(Foto_perfil, (self.ancho, self.alto))
 
     def mostrar(self, ventana):
-        ventana.blit(self.imgen, (self.x, self.y))
+        ventana.blit(self.imagen, (self.x, self.y))
 
-Configuracion = Perfil(x=100, y=100, alto=90, ancho=90, velocidad=10)
+Configuracion = Perfil(x=200, y=200, alto=180, ancho=180, velocidad=10)
 #6. Ciclo infinito
 ventana.fill(TRANSPARENTE)
 while True:
@@ -57,6 +57,6 @@ while True:
     #10. Dibujar elementos en la ventana
     Configuracion.mostrar(ventana)
     #11. Actualizar la ventana
-    pygame.display.filp()
+    pygame.display.flip()
     #12. Ralentizar un poco las cosas
     reloj.tick(FPS)
