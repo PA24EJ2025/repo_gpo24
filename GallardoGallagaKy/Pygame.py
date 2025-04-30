@@ -1,3 +1,16 @@
+class Perfil:
+    def _init_(self,x,y,alto,ancho,velocidad):
+        self.x = x
+        self.y = y
+        self.alto = alto
+        self.ancho = ancho
+        self.velocidad = velocidad
+        self.imagen = pygame.image.load('GallardoGallagaky/canales.png')
+        self.imagen_nueva = pygame.transform.scale(self.imagen,(80,80))
+
+    def mostrar(self,ventana):
+        ventana.blit(self.imagen_nueva,(self.x, self.y))
+
 import pygame
 import sys
 
@@ -11,3 +24,4 @@ x= 0
 y=0
 velocidad = 60
 reloj = pygame.time.Clock()
+
