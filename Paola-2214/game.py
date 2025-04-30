@@ -41,3 +41,8 @@ while True:
                 foto.x -= foto.velocidad
             if evento.key == K_RIGHT:
                 foto.x += foto.velocidad
+
+    ventana.fill((0,0,0))
+    foto.mostrar(ventana)
+    pygame.display.flip()
+    reloj.tick(velocidad)
