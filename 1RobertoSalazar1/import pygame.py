@@ -1,21 +1,20 @@
-class Perfil:
-    def __init__(self, x, y, ancho, alto, imagen, velocidad):
-        self.x = x
-        self.y = y
-        self.ancho = ancho
-        self.alto = alto
-        self.imagen = imagen
-        self.velocidad = velocidad
-        self.fotoperfil = pygame.image.load("ousi.png")
-    def mostrar(self, ventana):
-        ventana.blit(self.fotoperfil, (self.x, self.y))
-
 import pygame
 import sys
 pygame.init()
 ventana = pygame.display.set_mode((800, 700))
 reloj = pygame.time.Clock()
 frames = 60
+
+class Perfil:
+    def __init__(self, x, y, alto, ancho, velocidad):
+        self.x = x
+        self.y = y
+        self.alto = alto
+        self.ancho = ancho
+        self.velocidad = velocidad
+        self.fotoperfil = pygame.image.load("battlebeast.png")
+    def mostrar(self, ventana):
+        ventana.blit(self.fotoperfil, (self.x, self.y))
 
 posicion = Perfil(x=350, y=300, alto=80, ancho=80, velocidad=5) 
 
@@ -39,3 +38,5 @@ while True:
     posicion.mostrar(ventana)
     pygame.display.flip()
     reloj.tick(frames)
+
+
