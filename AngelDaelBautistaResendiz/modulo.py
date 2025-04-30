@@ -7,7 +7,7 @@ class Perfil:
         self.y = y
         self.ancho = 80
         self.alto = 80
-        self.imagen = pygame.image.load("fotoperfil.png")
+        self.imagen = pygame.image.load("fotoperfil5.png") 
         self.velocidad = velocidad
     
     def dibujar(self, ventana):
