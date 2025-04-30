@@ -31,3 +31,13 @@ while True:
         if evento.type ==QUIT:
             pygame.quit()
             sys.exit()
+
+        elif evento.type ==pygame.KEYDOWN:   
+            if evento.key == K_UP:
+                foto.y -= foto.velocidad
+            if evento.key == K_DOWN:
+                foto.y += foto.velocidad
+            if evento.key == K_LEFT:
+                foto.x -= foto.velocidad
+            if evento.key == K_RIGHT:
+                foto.x += foto.velocidad
