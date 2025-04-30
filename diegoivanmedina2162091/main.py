@@ -1,6 +1,6 @@
 #1. Importar el framework o paquete
 import pygame
-import sys 
+import sys
 from pygame.locals import *
 
 #2. Definir constantes
