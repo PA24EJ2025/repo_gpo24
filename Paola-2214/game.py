@@ -25,3 +25,24 @@ class Perfil:
         ventana.blit(self.imagen_nueva,(self.x, self.y))
 
 foto = Perfil(x,y,alto,ancho,velocidad)
+
+while True:
+    for evento in pygame.event.get():
+        if evento.type ==QUIT:
+            pygame.quit()
+            sys.exit()
+
+        elif evento.type ==pygame.KEYDOWN:   
+            if evento.key == K_UP:
+                foto.y -= foto.velocidad
+            if evento.key == K_DOWN:
+                foto.y += foto.velocidad
+            if evento.key == K_LEFT:
+                foto.x -= foto.velocidad
+            if evento.key == K_RIGHT:
+                foto.x += foto.velocidad
+
+    ventana.fill((0,0,0))
+    foto.mostrar(ventana)
+    pygame.display.flip()
+    reloj.tick(velocidad)
