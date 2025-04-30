@@ -16,7 +16,7 @@ pygame.display.set_caption("Mover mi foto")
 reloj = pygame.time.Clock()
 
 #4. Cargar recursos (imagenes)
-foto_original = pygame.image.load("MGDA423/gojo.gato.jpg")
+foto = pygame.image.load("MGDA423/gojo.gato.jpg")
 
 #5. Inicializar variables y la clase Perfil
 class Perfil:
@@ -38,7 +38,7 @@ velocidad_movimiento = 5
 posicion_inicial_x = 80
 posicion_inicial_y = 80
 
-perfil = Perfil(posicion_inicial_x, posicion_inicial_y, alto_deseado, ancho_deseado, foto_original, velocidad_movimiento)
+perfil = Perfil(posicion_inicial_x, posicion_inicial_y, alto_deseado, ancho_deseado, foto, velocidad_movimiento)
 
 #6. ciclo infinito..
 while True:
