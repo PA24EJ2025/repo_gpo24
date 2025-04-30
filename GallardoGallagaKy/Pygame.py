@@ -1,5 +1,5 @@
 class Perfil:
-    def _init_(self,x,y,alto,ancho,velocidad):
+    def __init__(self,x,y,alto,ancho,velocidad):
         self.x = x
         self.y = y
         self.alto = alto
@@ -13,6 +13,7 @@ class Perfil:
 
 import pygame
 import sys
+from pygame.locals import *
 
 pygame.init()
 
@@ -24,9 +25,27 @@ x= 0
 y=0
 velocidad = 60
 reloj = pygame.time.Clock()
+foto = Perfil(x, y, alto, ancho, velocidad)
 
+
+#Ciclo infinito 
 while True:
     for evento in pygame.event.get():
-        if evento.type == pygame.QUIT:
+        if evento.type == QUIT:
             pygame.quit()
             sys.exit()
+    
+        elif evento.type ==pygame.KEYDOWN:   
+                if evento.key == K_UP:
+                    foto.y -= foto.velocidad
+                if evento.key == K_DOWN:
+                    foto.y += foto.velocidad
+                if evento.key == K_LEFT:
+                    foto.x -= foto.velocidad
+                if evento.key == K_RIGHT:
+                    foto.x += foto.velocidad
+
+    ventana.fill((0, 0, 0))
+    foto.mostrar(ventana)
+    pygame.display.flip()
+    reloj.tick(velocidad)
