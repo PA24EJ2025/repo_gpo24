@@ -10,12 +10,12 @@ ALTO_VENTANA = 480
 CUADROS_POR_SEGUNDO = 30
 #3. Inicializar pygame
 pygame.init()
-ventana = pygame.dsplay.set_mode((ANCHO_VENTANA,ALTO_VENTANA))
+ventana = pygame.display.set_mode((ANCHO_VENTANA,ALTO_VENTANA))
 pygame.display.set_caption("Mover foto con teclas")
 reloj = pygame.time.Clock()
 
 #4. Cargar recursos (imagenes)
-foto = pygame.image.load("AndreaMGP28/Gato suavitel.jpg")
+foto = pygame.image.load("AndreaMGP28/gatosuavitel.png")
 #5. Inicializar variables
 class Perfil:
     def __init__(self, x, y, alto, ancho, velocidad):
@@ -39,7 +39,6 @@ while True:
             pygame.quit()
             sys.exit()
     #8. Realizar cualquier acción por frame
-    if  teclas = pygame.key.get_pressed()
     if teclas[pygame.K_LEFT]:
         perfil.x -= perfil.velocidad
     if teclas[pygame.K_RIGHT]:
