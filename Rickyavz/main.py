@@ -1,3 +1,18 @@
+class Perfil:
+    def __init__(self,x,y,ancho_i,alto_i,imagen,velocidad):
+        self.x=x
+        self.y=y
+        self.ancho_1=ancho_i
+        self.alto_i=alto_i
+        self.imagen= pygame.image.load("kratos.png")
+        self.imagen=pygame.transform.scale(self.imagen,(ancho_i,alto_i))
+        self.velocidad=velocidad
+    def mover(self,dx,dy):
+        self.x += dx + self.velocidad
+        self.y += dy + self.velocidad
+    def dibujar(self,superficie):
+        superficie.blit(self.imagen,(self.x,self.y))
+
 #1. Importar el framework o paquete
 import pygame
 from pygame.locals import *
@@ -27,3 +42,14 @@ while True:
         if evento.type == QUIT:
             pygame.quit()
             sys.exit() 
+    teclas=pygame.key.get_pressed()
+    dx,dy=0,0
+    if teclas[K_LEFT]:
+        dx=-1
+    if teclas[K_RIGHT]:
+        dx=-1
+    if teclas[K_UP]:
+        dy=-1
+    if teclas[K_DOWN]:
+        dy=1
+    
