@@ -15,7 +15,6 @@ pygame.display.set_caption("Mover imagen de perfil")
 
 reloj = pygame.time.Clock()
 
-# Solo se crea una vez el objeto Perfil
 imagenperfil = perfil(0, 0, 80, 80, 5)
 
 while True:
@@ -24,7 +23,7 @@ while True:
             pygame.quit()
             sys.exit()
 
-    # Mover con las teclas
+    
     teclas = pygame.key.get_pressed()
     if teclas[K_LEFT]:
         imagenperfil.x -= imagenperfil.velocidad
