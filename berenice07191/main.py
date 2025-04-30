@@ -16,8 +16,8 @@ pygame.display.set_caption("MOVER FOTO DE PERFIL")
 reloj=pygame.time.Clock()
 
 #4. Cargar recursos (imagenes)
-imagen_perfil= pygame.image.load("perfil.png").convert_alpha()
-imagen_perfil= pygame.transforme.scale(imagen_perfil,(80,80))
+imagen_perfil = pygame.image.load("berenice07191/foto_perfil.png")
+imagen_perfil= pygame.transform.scale(imagen_perfil,(80,80))
 
 class Perfil:
     def __init__(self,x,y,alto,ancho,velocidad):
@@ -33,7 +33,7 @@ class Perfil:
     def mover(self,teclas):
         if teclas[K_LEFT]:
             self.x-=self.velocidad
-        if teclas^[K_RIGHT]:
+        if teclas[K_RIGHT]:
             self.x+= self.velocidad
         if teclas[K_UP]:
             self.y-=self.velocidad
