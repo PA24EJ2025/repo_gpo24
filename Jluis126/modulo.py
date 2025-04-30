@@ -16,10 +16,12 @@ ventana = pygame.display.set_mode((X, Y))
 pygame.display.set_caption("foto de perfil movida")
 
 # 4. Cargar recursos (imagenes)
-imagen_original = pygame.image.load('gatito pretencioso')
+imagen_original = pygame.image.load('Jluis126\gatito pretencioso.png')
 imagen_modificada = pygame.transform.scale(imagen_original, (ANCHO, ALTO))
 
 # 5. Inicializar variables
+x_pos = X // 2 - ANCHO // 2  # Posición inicial de la imagen (centrada)
+y_pos = Y // 2 - ALTO // 2
 reloj = pygame.time.Clock()
 running = True
 
@@ -30,14 +32,22 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    # 8. Realizar cualquier acción por frame
-    # (En este caso no hay acciones aparte de dibujar)
+    # 8. Detectar las teclas presionadas para mover la imagen
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:  # Flecha izquierda
+        x_pos -= 5
+    if keys[pygame.K_RIGHT]:  # Flecha derecha
+        x_pos += 5
+    if keys[pygame.K_UP]:  # Flecha arriba
+        y_pos -= 5
+    if keys[pygame.K_DOWN]:  # Flecha abajo
+        y_pos += 5
 
     # 9. Limpiar la ventana
-    ventana.fill((0, 0, 0, 0))  # Fondo negro con transparencia
+    ventana.fill((0, 0, 0))  # Fondo negro (sin transparencia)
 
     # 10. Dibujar elementos en la ventana
-    ventana.blit(imagen_modificada, (X//2 - ANCHO//2, Y//2 - ALTO//2))
+    ventana.blit(imagen_modificada, (x_pos, y_pos))
 
     # 11. Actualizar la ventana
     pygame.display.update()
