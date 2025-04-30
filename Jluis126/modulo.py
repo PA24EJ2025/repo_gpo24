@@ -38,7 +38,6 @@ while running:
         y_pos -= 5
     if keys[pygame.K_DOWN]:  # Flecha pa abajo
         y_pos += 5
-
     # 9. Limpiar la ventana
     ventana.fill((0, 0, 0))
 
@@ -53,3 +52,5 @@ while running:
 
 pygame.quit()
 sys.exit()
+#deberia ya quedar listo
+
